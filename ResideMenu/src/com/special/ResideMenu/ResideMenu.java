@@ -518,7 +518,11 @@ public class ResideMenu extends FrameLayout{
                         pressedState = PRESSED_MOVE_VERTICAL;
                         break;
                     }
-                    if(xOffset < -50 || xOffset > 50) {
+                    //修改if()里面的参数大小
+                    
+                    //原来的:if(xOffset < -50 || xOffset > 50) {
+                    
+                    if(xOffset < -200 || xOffset > 200) {
                         pressedState = PRESSED_MOVE_HORIZANTAL;
                         ev.setAction(MotionEvent.ACTION_CANCEL);
                     }
